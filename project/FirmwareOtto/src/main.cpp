@@ -1,18 +1,54 @@
+#include "notes.h"
 #include <Arduino.h>
+#include <ESP32Servo.h>
 
-// put function declarations here:
-int myFunction(int, int);
+const int trig_pin = D2;
+const int echo_pin = D1;
+
+
+bool debug = true;
+
+
+float getDistance() {
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig_pin, LOW);
+
+  long duration = pulseIn(echo_pin, HIGH, 30000);
+
+  if (duration == 0) {
+    return -1; // aucune lecture
+  }
+
+  return (duration * 0.0343) / 2;
+}
+
+// distance
+void afficherDistance(float distance) {
+  if (debug) {
+    if (distance < 0) {
+      Serial.println("Aucune detection");
+    } else {
+      Serial.print("Distance: ");
+      Serial.print(distance);
+      Serial.println(" cm");
+    }
+  }
+}
+
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);
+  pinMode(trig_pin, OUTPUT);
+  pinMode(echo_pin, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  float distance = getDistance();
+  afficherDistance(distance);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  delay(1000);
 }

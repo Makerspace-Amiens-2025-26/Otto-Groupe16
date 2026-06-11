@@ -5,10 +5,10 @@ parent: Etapes de fabrication
 nav_order: 1
 ---
 
-1. Analyse du besoin
+
 Objectif
 
-# Concevoir un robot humanoïde éducatif capable :
+# Concevoir un robot humanoïde éducatif capable : ( tutoriel -> https://makerspace-amiens.fr/otto-mks/)
 
 - de se déplacer
 - d'interagir avec son environnement

@@ -39,6 +39,7 @@ Le robot Otto est un petit robot humanoïde open-source, développé pour enseig
 Le robot est controlé à distance depuis un smartphone grâce à l'intégration REMOTEXY qui nous permet d'ordonner une commande préalablement définie sur l'application dans le programme du robot.
 Cette application nommée Remote XY nous permet donc d'envoyer des commandes simples précodées au robot via le module bluetooth.
 
+<img width="1080" height="2063" alt="image" src="https://github.com/user-attachments/assets/d57a421d-1dfb-4ead-a47c-498beb3864f9" />
 
 
 

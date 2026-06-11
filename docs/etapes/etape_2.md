@@ -5,21 +5,15 @@ parent: Etapes de fabrication
 nav_order: 2
 ---
 
-# Assemblage
+# 2. Recherche et choix des solutions
 
-Après la préparation des matériaux, l'étape suivante est l'assemblage.
+- Étude des robots existants
+- Otto DIY
+- Robots éducatifs Arduino
+- Robots humanoïdes open-source
 
-## Étapes d'Assemblage
-
-1. **Organisation** : Organisez tous les composants préparés.
-2. **Assemblage Initial** : Commencez par assembler les pièces principales.
-3. **Fixation** : Fixez solidement les pièces ensemble en utilisant les outils appropriés.
-
-## Vérifications à Effectuer
-
-- Assurez-vous que toutes les pièces sont correctement alignées.
-- Vérifiez la stabilité et la solidité de l'assemblage.
-
-## Problèmes Communs et Solutions
-
-- Si des pièces ne s'emboîtent pas correctement, vérifiez leur alignement et leur dimension
+# Choix retenus
+- Carte Otto-MKS
+- Servomoteurs SG90
+- Capteur ultrason HC-SR04
+- Batterie rechargeable
